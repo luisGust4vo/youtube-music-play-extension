@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Music Play Button Clicker",
+  "version": "1.0",
+  "description": "Clique automaticamente no botão de play no YouTube Music.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://music.youtube.com/playlist?list=LM*"],
+      "js": ["content.js"]
+    }
+  ]
+}
